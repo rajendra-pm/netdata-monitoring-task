@@ -1,9 +1,15 @@
-# Start Netdata container
+# -------------------------------
+# PowerShell script to run Netdata
+# -------------------------------
+
+# 1️⃣ Pull & run Netdata container
 docker run -d --name netdata -p 19999:19999 netdata/netdata
 
-# Check if Netdata container is running
+# 2️⃣ Check running containers
 docker ps
 
-# Instructions:
-# - Access the dashboard at http://localhost:19999
-# - If running on a VM or EC2, use http://<Public-IP>:19999
+# 3️⃣ Access instructions (comments)
+# Open your browser:
+# - Local machine: http://localhost:19999
+# - VM/EC2: http://<Public-IP>:19999
+
